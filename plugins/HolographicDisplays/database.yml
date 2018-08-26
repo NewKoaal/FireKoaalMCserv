@@ -1,0 +1,16 @@
+n:
+  location: world, 0.080, 77.200, -14.495
+  lines:
+  - '&b*** &6NORD &b***'
+o:
+  location: world, -15.354, 77.200, 0.057
+  lines:
+  - '&b*** &6OUEST &b***'
+e:
+  location: world, 15.543, 77.200, -0.096
+  lines:
+  - '&b*** &6EST &b***'
+s:
+  location: world, 0.053, 77.200, 15.695
+  lines:
+  - '&b*** &6SUD &b***'

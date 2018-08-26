@@ -1,0 +1,206 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+
+groups:
+  Nouveau:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&f[Nouveau] '
+      build: false
+      suffix: ''
+  Citoyen:
+    default: false
+    permissions: []
+    inheritance:
+    - Nouveau
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&2Citoyen&7] '
+      build: true
+      suffix: ''
+  Guerrier:
+    default: false
+    permissions: []
+    inheritance:
+    - Citoyen
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&bGuerrier&7] '
+      build: true
+      suffix: ''
+  Chevalier:
+    default: false
+    permissions: []
+    inheritance:
+    - Guerrier
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&eChevalier&7] '
+      build: true
+      suffix: ''
+  Seigneur:
+    default: false
+    permissions: []
+    inheritance:
+    - Chevalier
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&3Seigneur&7] '
+      build: true
+      suffix: ''
+  Roi:
+    default: false
+    permissions: []
+    inheritance:
+    - Seigneur
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&9Roi&7] '
+      build: true
+      suffix: ''
+  Empereur:
+    default: false
+    permissions: []
+    inheritance:
+    - Roi
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&6Empereur&7] '
+      build: true
+      suffix: ''
+  Suprême:
+    default: false
+    permissions: []
+    inheritance:
+    - Empereur
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&7[&dSuprême&7] '
+      build: true
+      suffix: ''   
+  Titan:
+    default: false
+    permissions: []
+    inheritance:
+    - Suprême
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&0[&4Titan&0] '
+      build: true
+      suffix: ''
+#EVENT
+  Purgeur:
+    default: false
+    permissions: []
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&6[&l&4Purgeur&6] '
+      build: true
+      suffix: ''
+  Spectre:
+    default: false
+    permissions: []
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&6[&l&fSpectre&6] '
+      build: true
+      suffix: ''
+  Vivant:
+    default: false
+    permissions: []
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&6[&l&2Vivant&6] '
+      build: true
+      suffix: ''
+#STAFF      
+  Modérateur:
+    default: false
+    permissions: []
+    inheritance:
+    - g:groupmanager_moderator
+    - g:bukkit_moderator
+    - g:essentials_moderator
+    - g:towny_moderator
+    - g:vanish_moderator
+    info:
+      prefix: '&4[&5Modérateur&4] '
+      build: true
+      suffix: ''
+  Administrateur:
+    default: false
+    permissions: []
+    inheritance:
+    - Modérateur
+    - g:groupmanager_admin
+    - g:bukkit_admin
+    - g:essentials_admin
+    - g:towny_admin
+    - g:vanish_admin
+    info:
+      prefix: '&4[&cAdministrateur&4] '
+      build: true
+      suffix: ''
+  Fondateur:
+    default: false
+    permissions:
+    - '*'
+    - vanish.*
+    - -vanish.effects.*
+    - +vanish.effects.toggle.all
+    inheritance:
+    - Administrateur
+    info:
+      prefix: '&4&l[Fondateur] '
+      build: true
+      suffix: ''

@@ -1,0 +1,50 @@
+ConfigVersion: 2.1.4
+UpdateEvery15Seconds: true
+UsePermissions: false
+UseChatNames: false
+Groups:
+  Nouveau:
+    prefix: '&f'
+    suffix: ' [N]'
+  Citoyen:
+    prefix: '&2'
+    suffix: ' [Ci]'
+  Guerrier:
+    prefix: '&b'
+    suffix: ' [G]'
+  Chevalier:
+    prefix: '&e'
+    suffix: ' [Ch]'
+  Seigneur:
+    prefix: '&a'
+    suffix: ' [S]'
+  Roi:
+    prefix: '&9'
+    suffix: ' [R]'
+  Empereur:
+    prefix: '&6'
+    suffix: ' [E]'
+  Suprême:
+    prefix: '&d'
+    suffix: ' [Su]'
+  Titan:
+    prefix: '&4'
+    suffix: ' [T]'
+  Vivant:
+    prefix: '&2&l'
+    suffix: ' [V]'
+  Purgeur:
+    prefix: '&l&4'
+    suffix: ' [P]'
+  Spêctre:
+    prefix: '&l&f'
+    suffix: ' [Sp]'
+  Modérateur:
+    prefix: '&5'
+    suffix: ' [M]'
+  Administrateur:
+    prefix: '&c&l'
+    suffix: ' [A]'
+  Fondateur:
+    prefix: '&4&l'
+    suffix: ' [F]'

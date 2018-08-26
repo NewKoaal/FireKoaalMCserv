@@ -1,0 +1,21 @@
+lastAccountName: NewKoaal
+timestamps:
+  login: 1535200267794
+  logout: 1535201254878
+  lastteleport: 1535153822480
+ipAddress: 25.57.254.87
+lastlocation:
+  world: world
+  x: 14.0
+  y: 74.0
+  z: -15.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: world
+  x: -14.245345465999705
+  y: 79.2253002591975
+  z: 2.196279538680766
+  yaw: -192.47978
+  pitch: 35.852825
+money: '10000000049.0'

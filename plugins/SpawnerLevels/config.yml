@@ -1,0 +1,18 @@
+needSilkTouch: true
+needsPermToPlace: false
+needsPermToMine: true
+needsPermToUpgrade: true
+explosionSpawnerDropChance: 100
+costsExp: true
+Upgrade1:
+  cost: 100
+  title: '&3Spawner Upgrade &r[&eLvl 1&r];'
+  multiplier: 2
+Upgrade2:
+  cost: 200
+  title: '&3Spawner Upgrade &r[&eLvl 2&r]'
+  multiplier: 3
+Upgrade3:
+  cost: 300
+  title: '&3Spawner Upgrade &r[&eLvl 3&r]'
+  multiplier: 4

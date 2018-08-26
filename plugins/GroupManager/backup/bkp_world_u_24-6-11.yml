@@ -1,0 +1,26 @@
+users:
+  b10bab55-5794-4a4f-8501-a6d9603cad63:
+    lastname: NewKoaal
+    group: Fondateur
+    subgroups: []
+    permissions: []
+  ddc416cc-a948-4239-a443-12d38d18b37c:
+    lastname: fire64504
+    group: Fondateur
+    subgroups: []
+    permissions: []
+  ElgarL:
+    group: Nouveau
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  KHobbits:
+    group: Nouveau
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms
+  snowleo:
+    group: Nouveau
+    subgroups: []
+    permissions:
+    - groupmanager.noofflineperms

@@ -1,0 +1,238 @@
+# Shows if there is available new version on login with trademe.versioncheck permission node
+ShowNewVersion: true
+DataBase:
+  # Do you want to use Mysql database system or SQLite
+  # Use: mysql or sqlite
+  DataBaseType: sqlite
+  # Not usable if sqlite file system chosen
+  # Usually localhost or 127.0.0.1
+  mysqlHost: localhost
+  # Default port is 3306
+  mysqlPort: 3306
+  # Database table name
+  mysqlDatabase: trademe
+  # Database username, usually its root
+  mysqlUsername: root
+  # Your mysql database password, keep it as strong as posible
+  mysqlPassword: realystrongone
+# Language file you want to use
+Language: EN
+#  
+# This will allow you to globaly disable trades with specific modes
+# You can always give or take trade options with permission like trademe.moneytrade or trademe.exptrade
+TradeModes:
+  ItemTrade: true
+  ResidenceTrade: true
+  PlayerPointsTrade: true
+  GriefPreventionTrade: true
+  JobsTrade: true
+  JobsPointsTrade: true
+  ExpTrade: true
+  McMMOTrade: true
+  KingdomsTrade: true
+  MyPetTrade: true
+  MoneyTrade: true
+#  
+# Time to accept trade, in seconds
+AcceptDelay: 15
+#  
+# Time until counter ends, in seconds
+Confirm: 3
+#  
+# Time in sec for how long after combat player can't trade
+NonCombat: 10
+GriefPrevention:
+  #  
+  # Determines lowest amount of blocks players has to keep after trade
+  MinLeftBlocks: 100
+#  
+# Time in milliseconds between each click in trade inventory
+# Mainly to prevent to fast clicking and avoiding incorrect amount showing up because of that
+# Keep it at 200 as this will limit clicks to be no mo often than 5 times in one second
+ClickCooldown: 200
+#  
+# When this set to true, players can give trade offers or accept them by sneeking and pressing right mouse button on a player
+ShiftRightClick: false
+#  
+# You can lock quickbar and prevent players from trading from it
+LockQuickBar: false
+#  
+# Prevent trading between game modes
+NoTradeBetweenGameModes: true
+#  
+# If this set to true, players will be check for appropriate trade permissions between different permission groups for particular trade mode
+# Player should have trademe.moneytrade.[groupname] permission node to trade with that group with money
+# In example: player1 has Newbie group and player2 - Advanced group
+# player1 should have trademe.moneytrade.advanced and player2 should have trademe.moneytrade.newbie permission nodes for option to trade with money
+# Posible nodes: trademe.moneytrade.[groupname], trademe.exptrade.[groupname], trademe.mcmmotrade.[groupname], trademe.jobstrade.[groupname], trademe.residencetrade.[groupname]
+TradeGroups: false
+#  
+# While this is true, Distance wont work
+BetweenWorlds: true
+#  
+# World groups to separate trades if you have multiverse or similar plugin
+WorldGroups:
+  Group1:
+  - World
+  - World_nether
+  - World_the_end
+  Group2:
+  - ''
+  Group3:
+  - ''
+  Group4:
+  - ''
+  Group5:
+  - ''
+# Max distance players can trade to each other, BetweenWorlds should be set to false for this to work
+# Set 0 if you dont want to have distance restriction
+Distance: 0
+Logging:
+  # When this set to true, all trades will be logged into database for tracking down who traded what at which time
+  # Disable this if you are not interested in tracking this information and want to avoid having aditional database
+  Use: true
+AutoPurge:
+  Use: false
+  # Set for how long to keep trade information in database by minutes
+  # 43200 = 30 days
+  # 20160 = 14 days
+  # 10080 = 7 days
+  # 1440 = 24 hours
+  TimeRange: 43200
+Residence:
+  # Do you want to use residence max limit
+  # With this set to false players can have more residences than its been set up in residence config file
+  UseMaxLimit: true
+Regions:
+  # You can set in witch regions players can trade or cannot
+  WorldGuard:
+    Allow:
+      Use: false
+      List:
+      - testRegion
+      - testRegion2
+    Deny:
+      use: false
+      List:
+      - testRegion3
+      - testRegion4
+  # You can set in witch residence players can trade or cannot
+  Residence:
+    Allow:
+      Use: false
+      List:
+      - testResidence
+      - testResidence2
+    Deny:
+      use: false
+      List:
+      - testResidence3
+      - testResidence4
+BlockedWorlds:
+- testWorld
+- testWorld_nether
+# List of item id's to be blocked from trade
+BlockedItems:
+- 137
+- 166
+# List of item lore to be blocked from trade
+# this can be only part of line without color codes
+BlockedLore:
+- One line of lore
+- second line
+- color code not necessary
+# Max lvl allowed for player to have, if McMMO config files are not modified its is 1000
+McMMO:
+  MaxLvl: 1000
+Numbers:
+  ShortNames:
+    # With this enabled big numbers will be shortened from 1234567 to 1m or 1.23m
+    Enabled: false
+    # With this enabled numbers will be shown like 1.23m instead of only 1m
+    Show2Numbers: true
+    '1000': k
+    '1000000': m
+    '1000000000': b
+    '1000000000000': t
+Amounts:
+  Exp:
+    '1': 1.0
+    '2': 100.0
+    '3': 10000.0
+    '4': 1000000.0
+  # All amounts used for buttons to increase/decrease
+  # Inform players about posibility to use Shift button to rise increment by 10 times
+  Money:
+    '1': 1.0
+    '2': 100.0
+    '3': 10000.0
+    '4': 1000000.0
+Taxes:
+  # Taxes for transfers
+  Exp:
+    Fixed:
+      # Fixed amount of Exp will be taken during transfer
+      Use: false
+      Amount: 100
+    Percentage:
+      # Percentage amount of Exp will be taken during transfer
+      # 10.0 means user will receive 10% less money
+      Use: false
+      Amount: 10
+  # Taxes for transfers
+  Money:
+    Fixed:
+      # Fixed amount of Money will be taken during transfer
+      Use: false
+      Amount: 100
+    Percentage:
+      # Percentage amount of Money will be taken during transfer
+      # 10.0 means user will receive 10% less money
+      Use: false
+      Amount: 10
+Buttons:
+  Confirm:
+    # Id/meta used for confirm button
+    Confirmed:
+      Id: 160
+      Meta: 5
+    UnConfirmed:
+      Id: 160
+      Meta: 14
+  Counter:
+    # Id/meta used for column counter buttons
+    ColumnOn:
+      Id: 160
+      Meta: 5
+    ColumnOff:
+      Id: 160
+      Meta: 15
+  # Filled up when iten trading is turned off
+  ItemFields:
+    Id: 160
+    Meta: 7
+  # Id/meta used for empty slot to fillup
+  EmptySlot:
+    Id: 160
+    Meta: 8
+  TradeModes:
+    Exp:
+      1Amount: BUCKET:0
+      2Amount: MILK_BUCKET:0
+      3Amount: WATER_BUCKET:0
+      4Amount: LAVA_BUCKET:0
+      Offered: EXP_BOTTLE:0
+      Sub:
+        NA:
+          OfferOff: EXP_BOTTLE:0
+          OfferOn: EXP_BOTTLE:0
+    Money:
+      1Amount: GOLD_NUGGET:0
+      2Amount: GOLD_INGOT:0
+      3Amount: GOLD_BLOCK:0
+      4Amount: DIAMOND:0
+      Offered: GOLD_INGOT:0
+      Sub:
+        NA:
+          OfferOff: EYE_OF_ENDER:0
+          OfferOn: EYE_OF_ENDER:0

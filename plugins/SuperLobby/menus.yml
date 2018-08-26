@@ -1,0 +1,163 @@
+# ###################################################################################################
+# # +----------------------------------------------------------------------------------------------+ #
+#  |    _____                       _           _     _           _____       _                   | #
+#  |   / ____|                     | |         | |   | |         |  __ \     | |                  | #
+#  |  | (___  _   _ _ __   ___ _ __| |     ___ | |__ | |__  _   _| |  | | ___| |_   ___  _____    | #
+#  |   \___ \| | | | '_ \ / _ \ '__| |    / _ \| '_ \| '_ \| | | | |  | |/ _ \ | | | \ \/ / _ \   | #
+#  |   ____) | |_| | |_) |  __/ |  | |___| (_) | |_) | |_) | |_| | |__| |  __/ | |_| |>  <  __/   | #
+#  |  |_____/ \__,_| .__/ \___|_|  |______\___/|_.__/|_.__/ \__, |_____/ \___|_|\__,_/_/\_\___|   | #
+#  |               | |                                       __/ |                                | #
+#  |               |_|                                      |___/                                 | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  |  WIKI:        http://en.wiki.pedrojm96.com/wiki/SuperLobbyDeluxe                             | #
+#  |  BUG REPORTS: https://www.spigotmc.org/threads/superlobbydeluxe.132949                       | #
+#  |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+#  |  OFFICIAL SERVER: mc.minepal.net                                                             | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# ###################################################################################################
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                          Menu Nodes                                          | #
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                                                                              | #
+#  |  settings-name: The name of the menu.                                                        | #
+#  |  settings-rows: Number of rows in the menu. (1,2,3,4,5,6).                                   | #
+#  |  settings-world: World where the menu works. (Do not place to work on all worlds).           | #
+#  |  settings-open-commands: Command to open the menu.                                           | #
+#  |  settings-permission: Permission to use the menu.                                            | #
+#  |  settings-open-sound: Sound that will sound when you open the menu.                          | #
+#  |  settings-glass-enable: To place decoration glasses. default false                           | #
+#  |  settings-glass-color: The color of the glasses. From 0 to 15                                | #
+#  |  items: List of items that will contain the menu.                                            | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                          Items Nodes                                         | #
+#  +----------------------------------------------------------------------------------------------+ #
+#  |                                                                                              | #
+#  |  name: The name of the item.                                                                 | #
+#  |  lore: The description of the item.                                                          | #
+#  |  id: The id of the item material (https://www.minecraftinfo.com/idlist.htm).                 | #
+#  |  data-value: Value of the material type of the item.                                         | #
+#  |  slot: Location in the inventory of the item.                                                | #
+#  |  commands: Command that is executed when clicking.  (SERVER, PLAYER, CONSOLE, OP,            | #
+#  |     BROADCAST, GIVE, MONEY, POINTS, TELL,OPEN).                                              | #
+#  |  permission: Permission to use the item.                                                     | #
+#  |  price: Price to use the item. default none.                                                 | #
+#  |  keep-open: To keep inventory open. default false.                                           | #
+#  |  permission-to-view: Permission to view the inventory. default none.                         | #
+#  |  skull: To use heads with skin. (url:address.png | textures: <Base64 code> | <player>)       | #
+#  |  enchant-glow: To add enchantment colors to the items. default false                         | #
+#  |  version-check: To check if it is the correct version of minecraft.                          | #
+#  |                    default false (Requires ViaVersion)                                       | #
+#  |  version-list: List of versions to check in check version.                                   | #
+#  |  no-version-message: Message to show if the version is not compatible.                       | #
+#  |                      Use <version> to show compatible versions in the message.               | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  | To create more item simply copy the previous one and paste it here within items.             | #
+#  | To create more menus, copy the previous menu and paste it down in a clean place.             | #
+#  +----------------------------------------------------------------------------------------------+ #
+menu:
+  settings-name: '&6&k.&r &5&lExample Menu &6&k.'
+  settings-rows: 3
+  settings-world: LOBBY
+  settings-open-commands: menu
+  settings-permission: superlobby.menu.menu
+  settings-open-sound: BLOCK_NOTE_PLING
+  items:
+    survival:
+      name: '&c&l★ &a&lExample server BungeeCord &c&l★'
+      lore:
+      - '&8Survival'
+      - '&8Version 1.11.2'
+      - ''
+      - '&8> &7Your server description'
+      - '&8> &aClick to connect.'
+      id: 2
+      data-value: 0
+      slot: 11
+      commands:
+      - 'server: survival'
+      permission: superlobby.survival
+    submenu:
+      name: '&c&l★ &a&lExample SubMenu &c&l★'
+      lore:
+      - '&8> &7Your submenu description'
+      - '&8> &aClick to open.'
+      id: 1
+      data-value: 0
+      slot: 13
+      commands:
+      - 'open: shop'
+      keep-open: true
+      permission: superlobby.submenu
+    permission-view:
+      name: '&c&l★ &a&lExample Permission to see &c&l★'
+      lore:
+      - '&8> &7Great you can see it'
+      - '&8> &aYou have the necessary permissions.'
+      id: 1
+      data-value: 0
+      slot: 15
+      commands:
+      - 'tell: You have the necessary permissions'
+      permission: superlobby.permission-view
+      permission-to-view: true
+    skull:
+      name: '&c&l★ &a&lExample Skull &c&l★'
+      lore:
+      - '&8> &a....'
+      id: 397
+      data-value: 3
+      slot: 17
+      commands:
+      - 'tell: ...'
+      permission: superlobby.permission-view
+      skull: player
+shop:
+  settings-name: '&6&k.&r &5&lDonator rank &6&k.'
+  settings-rows: 3
+  settings-open-commands: shop
+  settings-permission: superlobby.menu.shop
+  settings-open-sound: BLOCK_NOTE_PLING
+  items:
+    diamond:
+      name: '&b&LDiamonds &6(&7Price: &f<price>&6)'
+      lore:
+      - '&a-----------------------'
+      - '&a- &7Buy 10 Diamonds'
+      - '&a- &7Click to buy'
+      - '&a-----------------------'
+      id: 264
+      data-value: 0
+      slot: 12
+      commands:
+      - 'give: DIAMOND 10'
+      - 'tell: &7Your reward &610 &bdiamonds'
+      - 'broadcast: &7The player &b<player> &7 buy &610 &bdiamonds.'
+      permission: superlobby.diamond
+      price: 40
+    gold:
+      name: '&b&lGolds &6(&7Price: &f<price>&6)'
+      lore:
+      - '&a-----------------------'
+      - '&a- &7Buy 10 Golds'
+      - '&a- &7Click to buy'
+      - '&a-----------------------'
+      id: 388
+      data-value: 0
+      slot: 14
+      commands:
+      - 'give: GOLD 10'
+      - 'tell: &7Your reward &610 &bgolds.'
+      - 'broadcast: &7The player &b<player> &7buy &610 &bgolds.'
+      permission: superlobby.money
+      price: 10

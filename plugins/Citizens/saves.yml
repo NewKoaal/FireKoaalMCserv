@@ -1,0 +1,60 @@
+# Citizens NPC Storage
+
+last-created-npc-id: 1
+npc:
+  '1':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE1MzUxOTg0NzY0NzEsInByb2ZpbGVJZCI6ImIxMGJhYjU1NTc5NDRhNGY4NTAxYTZkOTYwM2NhZDYzIiwicHJvZmlsZU5hbWUiOiJOZXdLb2FhbCIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzI4ODQxODk1OGZlYTAzYjgzNDQ3MmMxYzFmODQ0Yzk5MWU2NWExZmM5MWU4MDMyMmE4YWRkYzkwZTg5ZGE1NyJ9fX0=
+      cached-skin-uuid-name: newkoaal
+      cached-skin-uuid: b10bab55-5794-4a4f-8501-a6d9603cad63
+      player-skin-signature: e/EIRrRmXv4YmTPsbent6fu8HNO9U03n8Ni/K+I7YtNy267wqGz/u5LVMFyX3QvOptP+F6yx/pYfHDtngNdvIbe7IdS+byIwKsE9hLZ/uE0qhdUN7mT2830didIfCZTv66FKDJELQEZG2N1s8dkcuWCrFd6GQ+IACP+6dUw7npxaDjDAVRyLobY2d1+3HMQ8Cn8dXw539ErTTJpCRyIy5xt9E9yzFa35+KBhMGsELYy7K6i7V2OT099Bppjx82ScVEv52SE09iZDSigxGkawtrHA64LeCx+1OSmEL2+pJniID1CF00a08jp8MivYFFumVbq6u5QDne+T78TmOKBlMe0rERV27XN2W6dZRYCADPta2VB92lJwaWtcSya6whGSOg7RwyTXcoagJRNUkVVMXylNH4eKRf5Rqb/FDrEm8kNDmDEfsE+wRCt2NjLMey/Kui7B41oFS+FXCqJDTQwF0QbnOt7A5b9VQ96s2TEndplJdoji20etoe/czDaSb40y8ooNDQsGQKZzeMzxL3HcsxndDxIDWxYloklBfyiJof9LmBDbitvaq47N397DF5ORJ0TNvdZ/7dNEs/gftStrEBJD9iI4oA57vg2IrZ65py5Z/h5ZqP9PTU6UhCWgq3VuuK/rnsthWkrbcOZpH2MioBJcdJucASTJnNwWgBQlu+I=
+    name: NewKoaal
+    uuid: cdc313cf-37e6-4dcc-bd47-d5f63f6aa052
+    traits:
+      location:
+        world: LOBBY
+        x: '227.4319'
+        y: '6.0'
+        z: '429.5717'
+        yaw: '-178.70437622070312'
+        pitch: '0.0'
+      type: PLAYER
+      spawned: true
+      gravity:
+        enabled: false
+      owner:
+        owner: NewKoaal
+        uuid: 22018874-0bbc-3f3d-93f7-1184091ef382
+    traitnames: inventory,location,owner,equipment,spawned,gravity,type,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true
+  '0':
+    metadata:
+      player-skin-textures: eyJ0aW1lc3RhbXAiOjE1MzUxOTg0NzY1OTksInByb2ZpbGVJZCI6ImRkYzQxNmNjYTk0ODQyMzlhNDQzMTJkMzhkMThiMzdjIiwicHJvZmlsZU5hbWUiOiJmaXJlNjQ1MDQiLCJzaWduYXR1cmVSZXF1aXJlZCI6dHJ1ZSwidGV4dHVyZXMiOnsiU0tJTiI6eyJ1cmwiOiJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzlhODI1ZTZkNjk3NGMyNDQ0ZDc3MDAyMGQ1YTk0Zjc3MzE3YTllYjk1ZjA3MDFlNDI5NGQ4MzYyYWRjNzU5MGEifX19
+      cached-skin-uuid-name: fire64504
+      cached-skin-uuid: ddc416cc-a948-4239-a443-12d38d18b37c
+      player-skin-signature: o6FK7llB91JCcIgaZMPBUjAjSaG71C8YMnLZVfYYAAwHX/rAUOrZBRJ2CPolBBv2EH/dpMZhnQa0jnqsIQKkGuiNBPvXIFniRJr4sKYxapSVLlfBwRnQOXp9c9u7w6+6p2AO8N24qmrnCSbCXswSWOjBoX8aZKhkSYNkfclyn7JCtXWpH/2CHgx7l4O4Gmu2v4U0ecVj61LS8f062l3x2wOJ4wNVTJEupJDr7ygPzvjpcWHF+72/qPsmIjGgMc64ZIhZE9BX9JeKs7kS9Sje4M0ulGZtND7VLDL4GHYDQELa0F+qyvRcGSi17Cl5MZu0cxmxbMuEftzmnC/EhWDxusKFPtJgidAh6symrb2O9Erpt1WmA7f0APEHpi2GlwwoTI64Y6YiLy4ubBGMH93ZZFmVvoALQbr7fuaA6fC5PvzbbvQZ3xr+V+XsNn03t0lbieq2Ev85SVRotb5ltQdkPXlLuXvzkhVGBLotaiicEkBnjHe6S/5oa2q0n23Y3sG6W9O1tUWqXjHPHw98edWb41yBlBv82X9sRaQqyWcjEuhhmJtdJc/iY1YwXU6kb/rJGYisXHvRGB77XkOH0oaJEyB0KmKvV6BcLgUzFF1OI6eG+vvzamxhPJcOkO9L/Va3W5qz1ipTvOOFv2DHjbSafHhQdHuWSxLzqsCbhjyU9zY=
+    name: fire64504
+    uuid: 46d6391c-d63a-4b36-9b6c-41690b0d029d
+    traits:
+      location:
+        world: LOBBY
+        x: '229.4898'
+        y: '6.0'
+        z: '429.6748'
+        yaw: '-179.85243225097656'
+        pitch: '0.0'
+      type: PLAYER
+      spawned: true
+      gravity:
+        enabled: false
+      owner:
+        owner: NewKoaal
+        uuid: 22018874-0bbc-3f3d-93f7-1184091ef382
+    traitnames: inventory,location,owner,equipment,spawned,gravity,type,mounttrait
+    navigator:
+      speedmodifier: '1.0'
+      avoidwater: false
+      usedefaultstuckaction: true

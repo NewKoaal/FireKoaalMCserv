@@ -1,0 +1,29 @@
+#.
+#.    ######################
+#.    #       GROUPS       #
+#.    ######################
+#.
+#. These are the names of the groups defined in you permissions plugin.
+#. If a user has multiple groups, the group with the highest rank will
+#. be chosen, as your chat plugin does.
+#.
+#. Prefixes or suffixes CANNOT be longer than 16 chars, including colors.
+#.
+#. <name> is the separator of prefix and suffix. If you don't include it,
+#. the string will used as prefix.
+#.
+Nouveau: '&f[Nouveau] '
+Citoyen: '&7[&2Citoyen&7] '
+Guerrier: '&7[&bGuerrier&7] '
+Chevalier: '&7[&eChevalier&7] '
+Seigneur: '&7[&3Seigneur&7] '
+Roi: '&7[&9Roi&7] '
+Empereur: '&7[&6Empereur&7] '
+Suprême: '&7[&dSuprême&7] '
+Titan: '&0[&4Titan&0] '
+Purgeur: '&6[&l&4Purgeur&6] '
+Spêctre: '&6[&l&fSpectre&6] '
+Vivant: '&6[&l&2Vivant&6] '
+Modérateur: '&4[&5Modérateur&4] '
+Administrateur: '&4[&cAdministrateur&4] '
+Fondateur: '&4&l[Fondateur] '

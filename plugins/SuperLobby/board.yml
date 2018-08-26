@@ -1,0 +1,118 @@
+# ###################################################################################################
+#  +----------------------------------------------------------------------------------------------+ #
+#  |    _____                       _           _     _           _____       _                   | #
+#  |   / ____|                     | |         | |   | |         |  __ \     | |                  | #
+#  |  | (___  _   _ _ __   ___ _ __| |     ___ | |__ | |__  _   _| |  | | ___| |_   ___  _____    | #
+#  |   \___ \| | | | '_ \ / _ \ '__| |    / _ \| '_ \| '_ \| | | | |  | |/ _ \ | | | \ \/ / _ \   | #
+#  |   ____) | |_| | |_) |  __/ |  | |___| (_) | |_) | |_) | |_| | |__| |  __/ | |_| |>  <  __/   | #
+#  |  |_____/ \__,_| .__/ \___|_|  |______\___/|_.__/|_.__/ \__, |_____/ \___|_|\__,_/_/\_\___|   | #
+#  |               | |                                       __/ |                                | #
+#  |               |_|                                      |___/                                 | #
+#  |                                                                                              | #
+#  |                                                                                              | #
+#  |  WIKI:       http://en.wiki.pedrojm96.com/wiki/SuperLobbyDeluxe                              | #
+#  |  BUG REPORTS: https://www.spigotmc.org/threads/superlobbydeluxe.132949                       | #
+#  |  AUTHOR: PedroJM96 (pedrojm96.com)                                                           | #
+#  |  OFFICIAL SERVER: mc.minepal.net                                                             | #
+#  |                                                                                              | #
+#  +----------------------------------------------------------------------------------------------+ #
+# ###################################################################################################
+# 
+#  +----------------------------------------------------------------------------------------------+ #
+#  | For a detailed explanation of the configuration see this page.                               | #
+#  | http://en.wiki.pedrojm96.com/wiki/SuperLobbyDeluxe:board.yml                                 | #
+#  +----------------------------------------------------------------------------------------------+ #
+settings-enable: false
+settings-world:
+- world
+- lobby
+- hub
+settings-update-title: 3
+settings-title:
+- '&7< &6&lSuperLobby &7>'
+- '&7< &6&lSuperLobby &7>'
+- '&7< &6&lSuperLobby &7>'
+- '&7> &6&lSuperLobby &7<'
+- '&7> &6&lperLob &7<'
+- '&7> &6&lrL &7<'
+- '&7> &7<'
+- '&7< &6&lrL &7>'
+- '&7< &6&lperLob &7>'
+- '&7< &6&lSuperLobby &7>'
+- '&7< &6&lSuperLobby &7>'
+- '&7< &e&lS&6&luperLobby &7>'
+- '&7< &6&lS&e&lu&6&lperLobby &7>'
+- '&7< &6&lSu&e&lp&6&lerLobby &7>'
+- '&7< &6&lSup&e&le&6&lrLobby &7>'
+- '&7< &6&lSupe&e&lr&6&lLobby &7>'
+- '&7< &6&lSuper&e&lL&6&lobby &7>'
+- '&7< &6&lSuperL&e&lo&6&lbby &7>'
+- '&7< &6&lSuperLo&e&lb&6&lby &7>'
+- '&7< &6&lSuperLob&e&lb&6&ly &7>'
+- '&7< &6&lSuperLobb&e&ly &7>'
+board:
+  line1:
+    content:
+    - '&6&m------------------'
+    update: 1000
+  line2:
+    content:
+    - '&6&l> &a&lName:'
+    - '&6&l> &a&lNick:'
+    update: 120
+  line3:
+    content:
+    - '#&7<player>'
+    - '#&7<displayname>'
+    update: 120
+  line4:
+    content:
+    - ' '
+    update: 1000
+  line5:
+    content:
+    - '&aX &7<player-x> &aY &7<player-y> &aZ &7<player-z>'
+    update: 1
+  line6:
+    content:
+    - '  '
+    update: 1000
+  line7:
+    content:
+    - '&6&l> &a&lRank:'
+    update: 1000
+  line8:
+    content:
+    - '#&7<rank>'
+    update: 120
+  line9:
+    content:
+    - '   '
+    update: 1000
+  line10:
+    content:
+    - '&6&m------------------'
+    update: 1000
+  line11:
+    content:
+    - '&eBuy you rank in y&7_'
+    - '&euy you rank in yo&8_'
+    - '&ey you rank in you&7_'
+    - '&e you rank in yous&8_'
+    - '&eyou rank in youse&7_'
+    - '&eou rank in youser&8_'
+    - '&eu rank in youserv&7_'
+    - '&e rank in youserve&8_'
+    - '&erank in youserver&7_'
+    - '&eank in youservern&8_'
+    - '&enk in youserverna&7_'
+    - '&ek in youservernam&8_'
+    - '&e in youservername&7_'
+    - '&ein youservername.&8_'
+    - '&en youservername.c&7_'
+    - '&e youservername.co&8_'
+    - '&eyouservername.com&7_'
+    - '&6youservername.com&8_'
+    - '&eyouservername.com&7_'
+    - '&6youservername.com&8_'
+    update: 10

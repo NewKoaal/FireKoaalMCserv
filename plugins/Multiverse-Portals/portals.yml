@@ -1,0 +1,23 @@
+portals:
+  Faction1:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: NewKoaal
+    location: 208.0,4.0,373.0:211.0,6.0,373.0
+    world: LOBBY
+    destination: p:Faction2
+  Faction2:
+    entryfee:
+      currency: -1
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: NewKoaal
+    location: 12.0,74.0,-16.0:15.0,76.0,-16.0
+    world: world
+    destination: p:Faction1
